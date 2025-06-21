@@ -45,7 +45,8 @@ st.markdown("""
 # Connect to PostgreSQL
 @st.cache_resource
 def init_connection():
-    return create_engine("postgresql+psycopg2://delhivery_user:temp123@localhost:5432/logistics_db")
+    pg = st.secrets["postgres"]
+    return create_engine(f"postgresql+psycopg2://{pg.user}:{pg.password}@{pg.host}:{pg.port}/{pg.database}")
 
 engine = init_connection()
 
