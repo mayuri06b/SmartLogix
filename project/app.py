@@ -7,6 +7,7 @@ import numpy as np
 from sqlalchemy import create_engine
 from datetime import datetime, timedelta
 import plotly.figure_factory as ff
+from sqlalchemy import text
 
 # Page configuration
 st.set_page_config(
