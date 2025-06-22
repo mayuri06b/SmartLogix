@@ -1,0 +1,44 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+SMART_LOGIX
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Streamlit secrets
+secrets.toml
+.streamlit/secrets.toml
+
+# Logs
+*.log
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Dump or cache files
+*.dump
+*.bak
+*.sql
+*.db
+*.sqlite3
+
+# Pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Environment variables
+.env
